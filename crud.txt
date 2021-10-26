@@ -1,0 +1,22 @@
+--- exemplo insert pizza
+
+db.cardapio.insert(
+    {
+        'produto': 'Pizza de Calabresa',
+        'preco': '32.00',
+        'ingredientes': 'Massa tradicional e calabresa',
+        'tipo': 'comida'
+    }
+)
+
+--- exemplo insert bebida
+
+db.cardapio.insert(
+    {
+        'produto': 'Coca Cola 2 litros',
+        'preco': 12.00,
+        'ml': 2000,
+        'marca': 'Coca Cola'
+        'tipo': 'bebida'
+    }
+)
