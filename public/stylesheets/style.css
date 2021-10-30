@@ -77,6 +77,31 @@ h1
     height: 200px;
 }
 
+
+#pedidos 
+{
+    padding: 16px;
+}
+
+#pedidos a.pedido 
+{
+    display: block;
+    background: var(--light);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+
+#pedidos a.pedido:hover
+{
+    background: var(--preto-light);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
+}
+
 /* elements class */
 .sidenav {
     height: 100%;

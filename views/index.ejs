@@ -67,15 +67,27 @@
     <!-- FIM MENU -->
     <!-- PEDIDOS -->
     <div id="pedidos" style="color:white;">
-      <div class="container pt-5">
+      <div class="container block">
         <h1>Pedidos:</h1>
-        <ul>  
+        <div class="row d-flex justify-content-center">
+          
           <% docs.forEach(function(customer){ %>
-            <li>
-                <%= customer.nome %>
-            </li>
+          <div class="col-lg-3 col-md-6 mb-4 mb-lb-0">
+            <a href="/edit/<%= customer._id %>" class="pedido">
+              <h5 class="text-uppercase"> <%= customer.nome_cli %> </h5>
+              <ul class="list-group text-start">
+                <li> Bairro: <%= customer.bairro_cli %> </li>
+                <li> Rua: <%= customer.rua_cli %> </li>
+                <li> Número: <%= customer.numero_cli %> </li>
+                <li> Pedido: <%= customer.descricao_pedido %> </li>
+                <li> Valor: <%= customer.valor_pedido %> </li>
+              </ul>
+              <a href="/delete/<%= customer._id %>" class="btn button-primary" onclick="return confirm('Você realmente deseja excluir o pedido?'); "> Concluir pedido </a>
+            </a>
+          </div>
           <% }) %>
-        </ul>
+
+        </div>
       </div>
     </div>
     <!-- FIM PEDIDOS -->

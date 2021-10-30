@@ -32,6 +32,7 @@ router.post('/realizar_pedido', async (req, res, next) => {
     next(err);
   }
 })
+
 //editar o pedido
 router.get('/edit/:id', async (req, res, next) => {
   const id = req.params.id;
